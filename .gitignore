@@ -1,0 +1,16 @@
+﻿# Virtual env
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+
+# Office temp files
+~$*
+*.tmp
+
+# IDE
+.vscode/
+.idea/
