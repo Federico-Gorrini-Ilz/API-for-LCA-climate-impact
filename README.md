@@ -47,19 +47,13 @@ Keep this terminal open while testing.
 
 ## Test (from PowerShell terminal 2)
 
-Go to the project folder:
-
-```powershell
-cd path\to\project_flask
-```
-
-### 1. Check that the app is running
+step 1. Check that the app is running
 
 ```powershell
 curl.exe http://127.0.0.1:8000/
 ```
 
-### 2. Calculate Company A activity impact
+step 2. Calculate Company A activity impact
 
 ```powershell
 curl.exe "http://127.0.0.1:8000/impact/Baked%20Biscuit%20Wafers"
@@ -69,7 +63,7 @@ curl.exe "http://127.0.0.1:8000/impact/Basic%20Biscuit%20Dough"
 curl.exe "http://127.0.0.1:8000/impact/Chocolate%20Wafer%20Batter"
 ```
 
-### 3. Calculate Company B activity impact
+step 3. Calculate Company B activity impact
 
 ```powershell
 curl.exe -X POST "http://127.0.0.1:8000/upload-recipe" `
@@ -77,7 +71,7 @@ curl.exe -X POST "http://127.0.0.1:8000/upload-recipe" `
   -F "file=@data\Company_B_request.xlsx"
 ```
 
-### 4. Calculate Company B activity impact
+step 4. Calculate Company B activity impact
 
 ```powershell
 curl.exe "http://127.0.0.1:8000/impact/Baked%20Chocolate%20Wafers?partner_id=company_b"
