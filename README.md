@@ -63,9 +63,13 @@ curl.exe http://127.0.0.1:8000/
 
 ```powershell
 curl.exe "http://127.0.0.1:8000/impact/Baked%20Biscuit%20Wafers"
+
+curl.exe "http://127.0.0.1:8000/impact/Basic%20Biscuit%20Dough"
+
+curl.exe "http://127.0.0.1:8000/impact/Chocolate%20Wafer%20Batter"
 ```
 
-### 3. Upload Company B recipe
+### 3. Calculate Company B activity impact
 
 ```powershell
 curl.exe -X POST "http://127.0.0.1:8000/upload-recipe" `
