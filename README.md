@@ -1,4 +1,4 @@
-# Wafer Impact API - Minimal Flask Version
+# API for LCA climate impact
 
 Flask API wafer climate-impact calculation.
 
